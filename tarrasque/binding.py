@@ -273,7 +273,7 @@ class StreamBinding(object):
   @property
   def teaminfo(self):
     """
-    À list of :class:`Team` objects, one for each team in the game.
+    A list of :class:`Team` objects, one for each team in the game.
     """
     from .teaminfo import Teaminfo
     return [t for t in Teaminfo.get_all(self) if
